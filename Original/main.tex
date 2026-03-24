@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+ % Use the custom resume.cls style
+
+\usepackage[left=0.2 in,top=0.2in,right=0.2 in,bottom=0.2 in]{geometry} %
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+%\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \ifx&#3&\else\textit{\small #3} & \textit{\small #4} \\\fi
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+%\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Avichal Baweja} \\ \vspace{1pt}
+    \small +91 9837452284 $|$ \href{mailto:avichalbaweja@gmail.com}{\underline{avichalbaweja@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/avichalbaweja29/}{\underline{linkedin.com/in/avichalbaweja29}} $|$
+    \href{https://github.com/avichal29}{\underline{github.com/Avichal29}}
+\end{center}
+
+\section{SUMMARY}
+Founding Engineer with expertise in backend development, AI-driven systems, and scalable product architecture. Experienced in building end-to-end platforms in fast-paced startup environments. Proficient in Python, FastAPI, Docker, and cloud deployments with a proven ability to translate business needs into impactful technical solutions.
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Founding Engineer $|$ \textit{Datavedam}}{Oct 2025 -- Present}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Built and scaled a multi-product AI-driven platform from the ground up, including chatbot systems, automation tools, and data-driven applications.}
+        \resumeItem{Designed scalable backend services using Python (FastAPI) and integrated APIs for automation, analytics, and communication workflows.}
+        \resumeItem{Architected multi-tenant systems supporting customization across projects; built data pipelines enabling real-time querying and decision-making.}
+        \resumeItem{Managed DevOps workflows using Docker and cloud infrastructure, ensuring smooth CI/CD and production reliability.}
+        \resumeItem{Optimized system performance and reduced latency for handling concurrent users and real-time requests.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Business Analyst $|$ \textit{Purshotam Profiles Pvt. Ltd.}}{Jan 2025 -- July 2025}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Identified new business opportunities in solar projects sector; prepared proposals and performance reports for client engagement.}
+        \resumeItem{Collaborated with cross-functional teams to optimize sales processes and improve operational efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Computer Vision Intern $|$ \textit{TechEagle Innovations Pvt. Ltd.}}{Apr 2024 -- May 2024}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Developed a CV-based drone system integrating YOLOv5 with real-time feedback control for autonomous navigation and obstacle avoidance.}
+        \resumeItem{Designed an autonomous landing system in ROS/Gazebo using Python, OpenCV, and ArUco markers for precise landings.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Intern $|$ \textit{Sankalptaru Foundation}}{Jan 2023 -- Mar 2023}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Built predictive models (Python, Pandas, scikit-learn) forecasting farm conditions; performed demand analysis with Matplotlib.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.2in, label={}]
+    \small{\item{
+     \textbf{Languages \& Frameworks:} Python, FastAPI, SQL, React, REST APIs \\
+     \textbf{AI/ML \& Data:} Machine Learning, Computer Vision, OCR, RAG Systems, LLMs \\
+     \textbf{Tools \& Infrastructure:} Docker, Git, CI/CD, Cloud Deployment
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Event Planner} $|$ \emph{React, FastAPI, REST API}}{}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack event management platform with an integrated LLM-powered AI assistant for automated event descriptions and RSVP handling.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Handwritten Text to LaTeX Converter} $|$ \emph{Python, OCR, Image Processing, ML}}{}
+          \resumeItemListStart
+            \resumeItem{Built an OCR + LLM pipeline to extract handwritten notes and generate accurate LaTeX documents, with optimized prompts for math expressions.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Trackpad Control using Hand Gestures} $|$ \emph{Python, OpenCV, MediaPipe, PyAutoGUI}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a real-time hand gesture-based trackpad control system with efficient tracking and high-accuracy gesture detection.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Christ University}{Bengaluru, Karnataka}
+      {B.Tech. Computer Science \& Engineering, Honors in AI \& ML}{2021 -- 2025}
+    \resumeSubheading
+      {Delhi Public School}{Agra, Uttar Pradesh}
+      {Senior Secondary School}{2019 -- 2021}
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-------------------------------------------
+\end{document}

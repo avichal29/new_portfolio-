@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+ % Use the custom resume.cls style
+
+\usepackage[left=0.2 in,top=0.2in,right=0.2 in,bottom=0.2 in]{geometry} % 
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \ifx&#3&\else\textit{\small #3} & \textit{\small #4} \\\fi
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Avichal Baweja} \\ \vspace{1pt}
+    \small +91 9837452284 $|$ \href{mailto:avichalbaweja@gmail.com}{\underline{avichalbaweja@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/avichalbaweja29/}{\underline{linkedin.com/in/avichalbaweja29}} $|$
+    \href{https://github.com/avichal29}{\underline{github.com/Avichal29}}
+\end{center}
+\section{SUMMARY}
+Results-driven professional with a strong background in client relationship management, market research, and business growth strategies. Experienced in identifying new business opportunities, developing partnerships, and supporting sales initiatives to drive revenue growth.
+
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Christ University}{Bengaluru, Karnataka}
+      {B.Tech. Computer Science \& Engineering, Honors in AI \& ML}{2021 -- 2025}
+    \resumeSubheading
+      {Delhi Public School}{Agra, Uttar Pradesh}
+      {Senior Secondary School}{2019 -- 2021}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Business Development Associate $|$ \textit{Purshotam Profiles Pvt. Ltd.}}{Jan 2025 -- Present}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Researched and identified new business opportunities in the solar projects sector to support revenue growth.}
+        \resumeItem{Prepared presentations, proposals, and performance reports to strengthen client engagement and decision-making.}
+        \resumeItem{Collaborated with cross-functional teams to optimize sales processes and improve operational efficiency.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Computer Vision Intern $|$ \textit{TechEagle Innovations Pvt. Ltd.}}{Apr 2024 -- May 2024}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Developed a CV-based drone system integrating YOLOv5 with real-time feedback control for autonomous navigation and obstacle avoidance.}
+        \resumeItem{Designed an autonomous landing system in ROS/Gazebo using Python, OpenCV, and ArUco markers for precise landings.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {IT Intern $|$ \textit{Sankalptaru Foundation}}{Jan 2023 -- Mar 2023}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Built predictive models (Python, Pandas, scikit-learn) forecasting farm conditions; performed demand analysis with Matplotlib.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.2in, label={}]
+    \small{\item{
+     \textbf{Technical:} Python, C, Java, React, FastAPI, Machine Learning \\
+     \textbf{Data \& Analytics:} Excel, PowerBI, Tableau, Pandas, Matplotlib \\
+     \textbf{Tools:} Docker, Git, SQL, REST APIs
+    }}
+ \end{itemize}
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Event Planner} $|$ \emph{React, FastAPI, REST API}}{}
+          \resumeItemListStart
+            \resumeItem{Built full-stack platform (React + FastAPI) with LLM-powered AI assistant for automated event descriptions and RSVP handling.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Handwritten Text to LaTeX Converter} $|$ \emph{Python, OCR, Image Processing, ML}}{}
+          \resumeItemListStart
+            \resumeItem{Built OCR + LLM pipeline to extract handwritten notes and generate accurate LaTeX documents with optimized math prompts.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Trackpad Control using Hand Gestures} $|$ \emph{Python, OpenCV, MediaPipe, PyAutoGUI}}{}
+          \resumeItemListStart
+            \resumeItem{Developed real-time hand gesture-based trackpad control system using OpenCV, MediaPipe, and PyAutoGUI.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
